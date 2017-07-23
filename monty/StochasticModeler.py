@@ -46,7 +46,7 @@ def forecast():
     print("Yesterday's price was $%d/BTC" % price)
     for day in range(1,10):
         price = get_price_for_today(price, mean, variance, std_dev)
-        print("Price forecast for day +%d is %d" % (day, price))
+        print("Price forecast for day +%d is $%d" % (day, price))
 
 
 forecast()

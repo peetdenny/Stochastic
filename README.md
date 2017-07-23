@@ -30,3 +30,16 @@ to a standard deviation.
 ```stats.ppf(0.95)``` will return 1.645, which means that 1.645 standard deviations from the mean will contain 95% of the space
 
 
+## Sample output
+```
+Yesterday's price was $2208/BTC
+Price forecast for day +1 is $2206
+Price forecast for day +2 is $2222
+Price forecast for day +3 is $2220
+Price forecast for day +4 is $2227
+Price forecast for day +5 is $2227
+Price forecast for day +6 is $2221
+Price forecast for day +7 is $2234
+Price forecast for day +8 is $2233
+Price forecast for day +9 is $2237
+```
