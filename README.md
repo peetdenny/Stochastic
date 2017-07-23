@@ -43,3 +43,9 @@ Price forecast for day +7 is $2234
 Price forecast for day +8 is $2233
 Price forecast for day +9 is $2237
 ```
+
+
+## TODO
+
+At first glance, this doesn't seem to model Bitcoin's very volatile price fluctuations.
+Use an ML-style approach to testing and tuning; i.e. take 60% of the data as a 'training set', and use the other 40% (the more recent prices) as the _test set_.
