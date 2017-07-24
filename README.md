@@ -1,4 +1,4 @@
-# Stochastic Modeling Demo using Monte Carlo prediction of Bitcoin prices
+# Stochastic Modeling of Bitcoin prices using Monte Carlo prediction
 
 ## Approach
 To predict today's closing price ```st```, we take the previous day's closing price ```sy``` and raise multiply it by ```e^r```
@@ -32,7 +32,7 @@ to a standard deviation.
 
 ## Sample output
 ![This is what it looked like on OSX, anyway](https://github.com/peetdenny/Stochastic/blob/master/imgs/Forcast1.png)
-
+Graph showing how the price could fluctuate across time periods (here in 10 second intervals) based on historical trends and  stochastic fluctuations (as in Brownian motion)
 
 ## TODO
 
