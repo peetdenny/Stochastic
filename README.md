@@ -44,3 +44,8 @@ The historical data available for free is not awesome.
 The chaps at bitcoincharts have helpfully provided this stuff for free, but the sample is 'every few seconds', which ranges from sub-second to 15 seconds. This means that our predications are going to be a bit out of goose.
 
 Also, the data is not necessarily up to date, and this implementation is pretty naive, so don't use the forcasted prices to plan your whole investment strategy :)
+
+##Further reading
+
+https://www.youtube.com/watch?v=3gcLRU24-w0 - this short video explains the maths behind what we're doing here with basic Brownian montecarlo
+http://www.turingfinance.com/random-walks-down-wall-street-stochastic-processes-in-python/ - This excellent article goes into a lot more depth Brownian and why more sophisticated algorithms like Merton Jump and Heston are better models for financial modelling
