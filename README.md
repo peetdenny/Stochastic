@@ -31,7 +31,7 @@ to a standard deviation.
 
 
 ## Sample output
-![This is what it looked like on OSX, anyway](https://github.com/peetdenny/Stochastic/tree/master/imgs/Forecast1.png "Sample image"")
+![This is what it looked like on OSX, anyway](https://github.com/peetdenny/Stochastic/blob/master/imgs/Forcast1.png)
 
 
 ## TODO
