@@ -31,21 +31,16 @@ to a standard deviation.
 
 
 ## Sample output
-```
-Yesterday's price was $2208/BTC
-Price forecast for day +1 is $2206
-Price forecast for day +2 is $2222
-Price forecast for day +3 is $2220
-Price forecast for day +4 is $2227
-Price forecast for day +5 is $2227
-Price forecast for day +6 is $2221
-Price forecast for day +7 is $2234
-Price forecast for day +8 is $2233
-Price forecast for day +9 is $2237
-```
+![This is what it looked like on OSX, anyway](https://github.com/peetdenny/Stochastic/tree/master/imgs/Forecast1.png "Sample image"")
 
 
 ## TODO
 
 At first glance, this doesn't seem to model Bitcoin's very volatile price fluctuations.
 Use an ML-style approach to testing and tuning; i.e. take 60% of the data as a 'training set', and use the other 40% (the more recent prices) as the _test set_.
+
+## Challenges
+The historical data available for free is not awesome.
+The chaps at bitcoincharts have helpfully provided this stuff for free, but the sample is 'every few seconds', which ranges from sub-second to 15 seconds. This means that our predications are going to be a bit out of goose.
+
+Also, the data is not necessarily up to date, and this implementation is pretty naive, so don't use the forcasted prices to plan your whole investment strategy :)

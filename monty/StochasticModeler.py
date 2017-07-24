@@ -40,13 +40,16 @@ def get_price_for_today(yesterday_price, mean, variance, std_dev):
     return yesterday_price * math.exp(drift + (std_dev * norm.ppf(random.random())))
 
 
-def forecast():
+def forecast(days_to_forecast, no_of_iterations):
     data, mean, variance, std_dev = model()
-    price = data[np.shape(data)[0]-1,:][1]
-    print("Yesterday's price was $%d/BTC" % price)
-    for day in range(1,10):
-        price = get_price_for_today(price, mean, variance, std_dev)
-        print("Price forecast for day +%d is $%d" % (day, price))
-
-
-forecast()
+    starting_price = data[np.shape(data)[0]-1, :][1]
+    print("Yesterday's price was $%d/BTC" % starting_price)
+    iterations = []
+    for i in range(0, no_of_iterations):
+        price = starting_price
+        iteration = []
+        for day in range(1, days_to_forecast):
+            price = get_price_for_today(price, mean, variance, std_dev)
+            iteration.append(price)
+        iterations.append(iteration)
+    return iterations
